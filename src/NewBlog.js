@@ -4,6 +4,7 @@ const NewBlog = () => {
   const [title, setTitle] = useState("");
   const [body, setBody] = useState("")
   const [author, setAuthor] = useState("mario")
+  const [isPending, setIsPending] = useState(false)
 
   const handleSubmit = (e) => {
     // prevent default behavior
@@ -11,7 +12,21 @@ const NewBlog = () => {
     // for page to refresh
     e.preventDefault()
     const blog = { title,body,author}
+    setIsPending(true)
     console.log(blog)
+    // making a post request
+    // sending blog object to endpoint
+    fetch('http://localhost:8000/blogs',{
+        method: 'post',
+        headers: {"Content-Type": "application/json"},
+        // convert blog object
+        // into json string
+        body: JSON.stringify(blog)
+    })
+    .then( () => {
+        console.log('new post added')
+        setIsPending(false)
+    })
   }
 
   return (
@@ -40,7 +55,8 @@ const NewBlog = () => {
           <option value="mario">mario</option>
           <option value="yoshi">yoshi</option>
         </select>
-        <button>Add blog</button>
+      { !isPending && <button>Add blog</button>}
+      { isPending && <button disabled>Adding blog...</button>}
         <p>{title}</p>
         <p>{body}</p>
         <p>{author}</p>
