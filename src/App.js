@@ -3,6 +3,7 @@ import Home from "./Home";
 import NewBlog from "./NewBlog";
 import BlogDetails from "./BlogDetails";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import NotFound from "./NotFound";
 
 function App() {
   // dynamic values or variables
@@ -24,6 +25,7 @@ function App() {
             <Route path="/create" element={<NewBlog />} />
             {/* use of route parameter id */}
             <Route path="/blogs/:id" element={<BlogDetails />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
           {/* <h1>{ title }</h1>
       <p>liked { likes } times</p> */}
