@@ -83,6 +83,18 @@
       "title": "css",
       "body": "learn for styling web pages",
       "author": "mario"
+    },
+    {
+      "id": "128b",
+      "title": "js",
+      "body": "javascript for interacivity",
+      "author": "mario"
+    },
+    {
+      "id": "38d8",
+      "title": "php",
+      "body": "learn it",
+      "author": "yoshi"
     }
   ]
 }

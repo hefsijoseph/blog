@@ -1,10 +1,12 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const NewBlog = () => {
   const [title, setTitle] = useState("");
   const [body, setBody] = useState("")
   const [author, setAuthor] = useState("mario")
   const [isPending, setIsPending] = useState(false)
+  const navigate = useNavigate()
 
   const handleSubmit = (e) => {
     // prevent default behavior
@@ -26,6 +28,7 @@ const NewBlog = () => {
     .then( () => {
         console.log('new post added')
         setIsPending(false)
+        navigate('/')
     })
   }
 
