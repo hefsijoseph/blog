@@ -1,6 +1,7 @@
 import Navbar from "./Navbar";
 import Home from "./Home";
 import NewBlog from "./NewBlog";
+import BlogDetails from "./BlogDetails";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -21,6 +22,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/create" element={<NewBlog />} />
+            {/* use of route parameter id */}
+            <Route path="/blogs/:id" element={<BlogDetails />} />
           </Routes>
           {/* <h1>{ title }</h1>
       <p>liked { likes } times</p> */}

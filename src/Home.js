@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import BlogList from "./BlogList";
 import useFetch from "./useFetch";
 
@@ -37,12 +37,12 @@ const Home = () => {
   const changeName = () => {
     setName("luigi");
   };
-  const handleDelete = (e, id) => {
-    // 1. STOP the event from bubbling up to parent elements
-    e.stopPropagation();
-    const newBlog = blogs.filter((blog) => blog.id !== id);
-    // setBlogs(newBlog);
-  };
+  // const handleDelete = (e, id) => {
+  //   // 1. STOP the event from bubbling up to parent elements
+  //   e.stopPropagation();
+  //   // const newBlog = blogs.filter((blog) => blog.id !== id);
+  //   // setBlogs(newBlog);
+  // };
 
   // use effect runs for every render/ when place/ changes element in the dom
   // with this hook we can fetch data, perform authentication
@@ -84,7 +84,7 @@ const Home = () => {
         <BlogList
           blogs={blogs}
           title="All blogs!"
-          handleDelete={handleDelete}
+          // handleDelete={handleDelete}
         />
       )}
       {blogs && (
