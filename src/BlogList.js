@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const BlogList = ({ blogs, title,handleDelete }) => {
      // destructure props above is shortcut for the code 
     // const blogs= props.blogs;
@@ -11,9 +13,11 @@ const BlogList = ({ blogs, title,handleDelete }) => {
                 each root element must have a key */}
             {blogs.map((blog) => (
                 <div className="blog-preview" key={blog.id}>
+                  <Link to={`/blogs/${blog.id}`}>
                   <h2>{ blog.title }</h2>
                   <p>Written by { blog.author }</p>
-                  <button onClick={(e) => handleDelete(e,blog.id)}>Delete blog</button>
+                  </Link>
+                  {/* <button onClick={(e) => handleDelete(e,blog.id)}>Delete blog</button> */}
                 </div>
             ))}
      </div>
