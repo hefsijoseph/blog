@@ -7,94 +7,16 @@
       "id": "1"
     },
     {
-      "title": "Opening party",
-      "body": "Why do we use it\nIt is long established fact that a reader will distratced",
-      "author": "yoshi",
-      "id": "2"
-    },
-    {
       "id": "c169",
       "title": "react tips",
       "body": "welcome to this course",
       "author": "yoshi"
     },
     {
-      "id": "9654",
-      "title": "learn vue",
-      "body": "awesome js library",
+      "id": "034e",
+      "title": "Opening party!",
+      "body": "enjoy",
       "author": "mario"
-    },
-    {
-      "id": "6b7b",
-      "title": "css",
-      "body": "learn for styling web pages",
-      "author": "mario"
-    },
-    {
-      "id": "da46",
-      "title": "css",
-      "body": "learn for styling web pages",
-      "author": "mario"
-    },
-    {
-      "id": "b0cc",
-      "title": "css",
-      "body": "learn for styling web pages",
-      "author": "mario"
-    },
-    {
-      "id": "1bd9",
-      "title": "css",
-      "body": "learn for styling web pages",
-      "author": "mario"
-    },
-    {
-      "id": "c703",
-      "title": "css",
-      "body": "learn for styling web pages",
-      "author": "mario"
-    },
-    {
-      "id": "443b",
-      "title": "css",
-      "body": "learn for styling web pages",
-      "author": "mario"
-    },
-    {
-      "id": "3d60",
-      "title": "css",
-      "body": "learn for styling web pages",
-      "author": "mario"
-    },
-    {
-      "id": "5611",
-      "title": "css",
-      "body": "learn for styling web pages",
-      "author": "mario"
-    },
-    {
-      "id": "1da5",
-      "title": "css",
-      "body": "learn for styling web pages",
-      "author": "mario"
-    },
-    {
-      "id": "59cd",
-      "title": "css",
-      "body": "learn for styling web pages",
-      "author": "mario"
-    },
-    {
-      "id": "128b",
-      "title": "js",
-      "body": "javascript for interacivity",
-      "author": "mario"
-    },
-    {
-      "id": "38d8",
-      "title": "php",
-      "body": "learn it",
-      "author": "yoshi"
     }
   ]
 }
